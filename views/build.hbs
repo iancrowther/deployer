@@ -1,0 +1,49 @@
+{{#content 'pageScripts'}}
+<script>
+  // console.log("page script loaded");
+</script>
+
+<script src="/socket.io/socket.io.js"></script>
+<script>
+	var statuslist = document.createElement( 'ul' );
+
+	document.getElementById( 'content' ).appendChild( statuslist );
+
+  var socket = io.connect('http://localhost');
+
+  socket.on('step', function ( data ) {
+
+    var item = document.createElement( 'li' );
+		    item.className = data.id;
+		    item.innerHTML = data.status;
+
+		statuslist.appendChild( item );
+
+  });
+
+  socket.on( 'complete', function ( data ) {
+
+  	var status = document.getElementsByClassName( 'status' )[0];
+
+  	var link = document.createElement( 'a' );
+  	link.innerHTML = data.url;
+  	link.href = data.url;
+
+  	status.innerHTML = "";
+  	status.appendChild( link );
+
+  });
+</script>
+
+{{/content}}
+
+<section id="content">
+
+	<h2>build</h2>
+
+	<div class="status">
+		<p>working...</p>
+		<p>you will receive a pull request shortly</p>
+	</div>
+
+</section>

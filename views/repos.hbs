@@ -1,0 +1,18 @@
+
+{{#content 'pageScripts'}}
+<script>
+  console.log("page script loaded");
+</script>
+{{/content}}
+
+<section id="content">
+
+	<h2>repos:</h2>
+
+	<ul>
+		{{#each model.repos}}
+		<a href="/build/{{../model.username}}/{{this}}"><li>{{this}}</li></a>
+		{{/each}}
+	</ul>
+
+</section>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{{model.header.title}}</title>
+		<!-- <link rel="stylesheet" type="text/css" href="/styles.css"> -->
+	</head>
+
+	<body>
+		{{> header}}
+
+		{{{body}}}
+
+		{{> footer}}
+
+		<!-- Partials are common snippets to be used 1 or more pages. -->
+    {{> scripts}}
+
+    <!-- A block is placeholder for pieces of content defined in a page. -->
+    {{{block 'pageScripts'}}}
+
+	</body>
+
+</html>
