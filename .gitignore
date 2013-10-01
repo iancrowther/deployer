@@ -2,3 +2,7 @@
 node_modules
 src
 dist/scripts.min.js
+
+src/Gruntfile.js
+
+src/Gruntfile.js
