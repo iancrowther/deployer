@@ -32,4 +32,9 @@ server.listen( port, function() {
 
 var io = socket.listen( server );
 
+io.configure(function () {
+  io.set("transports", ["xhr-polling"]);
+  io.set("polling duration", 10);
+});
+
 require( './routes' )( app, io );
