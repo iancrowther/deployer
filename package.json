@@ -7,7 +7,7 @@
     "fs-extra": "~0.6.4",
     "express-hbs": "~0.2.2",
     "async": "~0.2.9",
-    "socket.io": "~0.9.16"
+    "socket.io": "~2.3.0"
   },
   "engines": {
     "node": "0.10.x",
