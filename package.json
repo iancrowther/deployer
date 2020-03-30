@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "dependencies": {
     "express": "3.1.x",
-    "github": "~0.1.10",
+    "github": "~14.0.0",
     "fs-extra": "~9.0.0",
     "express-hbs": "~2.3.1",
     "async": "~3.2.0",
