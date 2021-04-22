@@ -5,7 +5,7 @@
     "express": "4.17.x",
     "github": "~14.0.0",
     "fs-extra": "~9.0.0",
-    "express-hbs": "~2.3.1",
+    "express-hbs": "~2.4.0",
     "async": "~3.2.0",
     "socket.io": "~4.0.0"
   },
